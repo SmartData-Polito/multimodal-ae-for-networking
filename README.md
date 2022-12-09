@@ -1,6 +1,5 @@
 # multi-modal-autoencoder
 
-
 Introduction and description of the repo
 
 ##  **Table of Content**
@@ -8,7 +7,8 @@ Introduction and description of the repo
 - [Notebooks](#notebooks)
 - [Scripts](#scripts)
 
-## **How to reproduce results in the paper?**
+
+## **How to reproduce results in the paper? - TO CHANGE**
 ___
 
 Note: This guide assumes a Debian-like system (tested on Ubuntu 20.04 & Debian 11).
