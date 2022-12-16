@@ -1,6 +1,13 @@
-# multi-modal-autoencoder
+# Multi-modal Autoencoders for Network Traffic Analysis
+___
 
-Introduction and description of the repo
+In this repository, we provide the source code and data used in the experiments of our paper "Multi-modal Autoencoders for Network Traffic Analysis". The code includes an implementation of the multi-modal autoencoder (MAE) architecture proposed in the paper, using Python 3.7.9 and Keras. We also provide scripts for running the experiments and reproducing the results reported in the paper.
+
+The MAE architecture consists of multiple adaptation modules for handling different input measurements, and an integration module for creating intermediate embeddings. We demonstrate the benefits of this approach by implementing it on three different traffic analysis tasks and comparing it to alternative deep learning solutions. Our results show that the MAE performs on par or better than these alternatives, and that the representation it generates is rich and compact.
+
+To get started, clone the repository and follow the instructions in the README.md file.
+
+We hope that this repository will be useful for researchers interested in network traffic analysis and multi-modal autoencoders. Please feel free to contact us if you have any questions or suggestions.
 
 ##  **Table of Content**
 - [How to reproduce results in the paper?](#how-to-reproduce-results-in-the-paper)
