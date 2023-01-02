@@ -2,7 +2,7 @@
 ___
 
 <div style="display:flex;">
-  <img src=".logos/smartdata.png", width="200", style="margin-right:8px;">
+  <img src=".logos/polito.png", width="200", style="margin-right:8px;">
   <img src=".logos/huawei.png", width="220", style="margin-left:8px;">
 </div>
 
