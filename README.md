@@ -12,7 +12,7 @@ We hope that this repository will be useful for researchers interested in networ
 
 ##  **Table of Content**
 - [Project structure](#project-structure)
-- [Reqiorements](#requirements)
+- [Requirements](#requirements)
 - [How to reproduce results in the paper?](#how-to-reproduce-results-in-the-paper)
 - [Datasets](#datasets)
 - [Notebooks](#notebooks)
@@ -32,7 +32,8 @@ The repository is organized as follows:
 To run the code in this repository, you will need the following software and libraries:
 
 - Python 3.6 or higher
-- [INSERT REQUIRED PYTHON LIBRARIES HERE]
+- gensim
+- community
 
 
 
@@ -75,9 +76,9 @@ Note: This guide assumes a Debian-like system (tested on Ubuntu 20.04 & Debian 1
 
 The datasets used in the paper can be downloaded from [INSERT URL HERE] using the password provided. These datasets are:
 
-- MIRAGE: a dataset of network traffic flows for mobile app classification, with 44,000 samples and 16 classes.
-- DARKNET: a dataset of IP addresses for classifying groups based on coordinates, with 14,000 samples and 13 + 1 classes.
-- ISCX: a dataset of network flows for traffic type classification, with 609 samples and 5 classes.
+- `MIRAGE`: a dataset of network traffic flows for mobile app classification, with 44,000 samples and 16 classes.
+- `DARKNET`: a dataset of IP addresses for classifying groups based on coordinates, with 14,000 samples and 13 + 1 classes.
+- `ISCX`: a dataset of network flows for traffic type classification, with 609 samples and 5 classes.
 
 We provide the datasets in preprocessed form, using TSTAT to extract both quantities and entities. The notebooks in this repository show how to extract these features from the raw data.
 
@@ -107,25 +108,17 @@ Once the datasets are downloaded, they will be unzipped and ready to use. You ca
     - Task03 - Quantities and entities extraction
     - Datasets characterization
 2. [**Task01: Traffic application classification**](./notebooks/01-mobile-application.ipynb)
-    - Training of Multi-modal Autoencoder
-    - Training of Deep classifiers (Raw features and MAE)
     - Validation of deep classifiers
     - Embeddings neighborhood evaluation
     - Shallow learners
     - Unsupervised clustering
 3. [**Task02: Darknet traffic classification**](./notebooks/02-darknet-traffic.ipynb)
-    - Training of Multi-modal Autoencoder
-    - Training of Deep classifiers (Raw features and MAE)
     - Validation of deep classifiers
     - Embeddings neighborhood evaluation
 4. [**Task03: Traffic category classification**](./notebooks/03-traffic-category.ipynb)
-    - Training of Multi-modal Autoencoder
-    - Training of Deep classifiers (Raw features and MAE)
     - Validation of deep classifiers
     - Embeddings neighborhood evaluation
 5. [**Grid Search**](./notebooks/04-grid-search.ipynb)
-    - Training of Multi-modal Autoencoders
-    - Training of Deep classifiers
     - Validation of deep classifiers
 6. [**Conclusions**](./notebooks/05-visualization.ipynb)
     - Experiments finalization
@@ -149,15 +142,25 @@ If you use this code or data in your research, please cite our paper:
 
 ## **Todo**
 - Notebooks:
-    - [x] Shallow learners
-    - [x] Clustering
-    - [x] Grid Search
+    - [x] Task01
+        - [x] Codes
+        - [x] Comments
+        - [x] Markdowns
+    - [ ] Task02
+        - [ ] Codes
+        - [ ] Comments
+        - [ ] Markdowns
+    - [ ] Task03
+        - [ ] Codes
+        - [ ] Comments
+        - [ ] Markdowns
     - [ ] Finalization and visualization
     - [ ] Features engineering -- Starting datasets
 - Scripts
-    - [ ] Launcher
-    - [ ] Single scripts
+    - [x] Training task01
+    - [ ] Training task02
+    - [ ] Training task03
+    - [ ] Training GridSearch
 - Documentation
-    - [ ] Docstring functions
     - [ ] README
-    - [ ] Raw data folder on cluster
+    - [x] Raw data folder on cluster

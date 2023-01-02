@@ -1,5 +1,12 @@
 import numpy as np
 
+import warnings
+from sklearn.exceptions import DataConversionWarning, UndefinedMetricWarning
+
+warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.filterwarnings(action='ignore', category=DataConversionWarning)
+warnings.filterwarnings(action='ignore', category=UndefinedMetricWarning)
+
 def get_datasets(kfolds, K, df):
     train_ips, val_ips, y_train, y_val = kfolds[K]
     X_train = df.loc[train_ips].drop(columns=['label'])
