@@ -1,6 +1,12 @@
 # Multi-modal Autoencoders for Network Traffic Analysis
 ___
 
+<div style="display:flex;">
+  <img src=".logos/smartdata.png", width="200", style="margin-right:8px;">
+  <img src=".logos/huawei.png", width="220", style="margin-left:8px;">
+</div>
+
+
 In this repository, we provide the source code and data used in the experiments 
 of our paper "Multi-modal Autoencoders for Network Traffic Analysis", presented 
 at the [Conference Name] conference in [Year]. The paper presents a multi-modal 
