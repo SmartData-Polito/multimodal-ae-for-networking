@@ -1,36 +1,26 @@
 # Multi-modal Autoencoders for Network Traffic Analysis
 ___
 
-In this repository, we provide the source code and data used in the experiments 
-of our paper "Multi-modal Autoencoders for Network Traffic Analysis", presented 
-at the [Conference Name] conference in [Year]. The paper presents a multi-modal 
-autoencoder (MAE) architecture for network traffic analysis, and evaluates it 
-on three different traffic analysis tasks. 
+In this repository, we provide the source code and data used in the experiments of our paper "Multi-modal Autoencoders for Network Traffic Analysis", presented at the [Conference Name] conference in [Year]. The paper presents a multi-modal autoencoder (MAE) architecture for network traffic analysis, and evaluates it on three different traffic analysis tasks. 
 
-The MAE architecture consists of multiple adaptation modules for handling 
-different input measurements, and an integration module for creating intermediate 
-embeddings. We demonstrate the benefits of this approach by implementing it on 
-three different traffic analysis tasks and comparing it to alternative deep 
-learning solutions. Our results show that the MAE performs on par or better 
-than these alternatives, and that the representation it generates is rich and 
-compact.
+The MAE architecture consists of multiple adaptation modules for handling different input measurements, and an integration module for creating intermediate embeddings. We demonstrate the benefits of this approach by implementing it on three different traffic analysis tasks and comparing it to alternative deep learning solutions. Our results show that the MAE performs on par or better 
+than these alternatives, and that the representation it generates is rich and compact.
 
-This repo includes an implementation of the multi-modal autoencoder (MAE) 
-architecture proposed in the paper, using Python 3.7.9 and Keras. We also 
-provide scripts for training the models and notebooks for running the 
-experiments and reproducing the results reported in the paper.
+This repo includes an implementation of the multi-modal autoencoder (MAE) architecture proposed in the paper, using Python 3.7.9 and Keras. We also provide scripts for training the models and notebooks for running the experiments and reproducing the results reported in the paper.
 
-We hope that this repository will be useful for researchers interested in 
-network traffic analysis and multi-modal autoencoders. Please feel free to 
-contact us if you have any questions or suggestions.
+We hope that this repository will be useful for researchers interested in network traffic analysis and multi-modal autoencoders. Please feel free to contact us if you have any questions or suggestions.
 
 ##  **Table of Content**
+- [Project structure](#project-structure)
+- [Reqiorements](#requirements)
 - [How to reproduce results in the paper?](#how-to-reproduce-results-in-the-paper)
+- [Datasets](#datasets)
 - [Notebooks](#notebooks)
+- [Training the models](#training-the-models)
 - [Scripts](#scripts)
 
 
-## **Project Structure**
+## **Project structure**
 
 The repository is organized as follows:
 
@@ -47,7 +37,7 @@ To run the code in this repository, you will need the following software and lib
 
 
 ## **How to reproduce results in the paper?**
-___
+
 
 Note: This guide assumes a Debian-like system (tested on Ubuntu 20.04 & Debian 11).
 
@@ -109,7 +99,7 @@ unzip iscx.zip
 Once the datasets are downloaded, they will be unzipped and ready to use. You can then follow the instructions in the notebooks to preprocess the data and train the models.
 
 ## **Notebooks**
-___
+
 
 1. [**Features engineering**](./notebooks/00-characterization.ipynb)
     - Task01 - Quantities and entities extraction
@@ -142,8 +132,8 @@ ___
     - Data visualization
 
 
-## **Training the Models**
-___
+## **Training the models**
+
 
 ## **Citations**
 If you use this code or data in your research, please cite our paper:
