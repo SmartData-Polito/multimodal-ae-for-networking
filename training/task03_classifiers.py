@@ -14,7 +14,7 @@ epochs, batch size, and fold number to use for training and validation.
 Usage example
 -------------
 
-$ python task03_classifiers.py --epochs 20 --batch-size 128 --K 3
+$ python task03_classifiers.py --epochs 20 --batch_size 128 --fold_number 3
 
 """
 

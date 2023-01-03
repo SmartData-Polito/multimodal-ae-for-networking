@@ -11,11 +11,11 @@ for all the folds or only for the specified one.
 
 Usage
 -----
-python run_tasks.py -t TASK_NUMBER \
-                    -m MODEL_TYPE \
-                    -e NUM_EPOCHS \
-                    -b BATCH_SIZE \
-                    -f FOLD_NUMBER
+python train_tasks.py -t TASK_NUMBER \
+                      -m MODEL_TYPE \
+                      -e NUM_EPOCHS \
+                      -b BATCH_SIZE \
+                      -f FOLD_NUMBER
 
 Examples
 --------
@@ -47,7 +47,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 
 # parse command line arguments
-parser = argparse.ArgumentParser(description='Run task scripts')
+parser = argparse.ArgumentParser(description='Run task training')
 parser.add_argument(
     '-t', '--task', default='01', help='task number (01, 02, or 03)')
 parser.add_argument(

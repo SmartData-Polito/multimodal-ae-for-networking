@@ -15,7 +15,7 @@ validation.
 Usage example
 -------------
 
-$ python task02_mae.py --epochs 20 --batch-size 128 --K 3
+$ python task02_mae.py --epochs 20 --batch_size 128 --fold_number 3
 
 """
 
@@ -159,6 +159,10 @@ def train_multimodal_autoencoder(epochs: int, batch_size: int, K: int):
             validation_data=(X_val, X_val), 
             save=True, 
             verbose=1)
+
+    # Retrieve the best model
+    mae = MultimodalAE(model_path=f'../data/task02/mae/{fname}_k{K}',
+                       _load_model=True)
 
     #=============================================================
     # Save the embeddings
