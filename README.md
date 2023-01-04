@@ -213,6 +213,12 @@ If you use this code or data in your research, please cite our paper:
         - [x] Intro-Markdowns
     - [ ] Finalization and visualization
     - [ ] Starting datasets and characterization
+        - [x] Datasets
+        - [ ] Dataset balancing
+        - [ ] Markdowns
+        - [ ] Comments and functions
+        - [ ] Stratified k fold
+        - [ ] t-SNE - task01
 - Scripts
     - [x] Training task01
     - [x] Training task02
