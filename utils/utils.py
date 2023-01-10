@@ -1,7 +1,10 @@
+# type: ignore
+
 import numpy as np
 from keras import layers
 import warnings
 from sklearn.exceptions import DataConversionWarning, UndefinedMetricWarning
+from scipy.stats import entropy
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
 warnings.filterwarnings(action='ignore', category=DataConversionWarning)
@@ -16,3 +19,11 @@ def get_datasets(kfolds, K, df):
     y_train, y_val = np.ravel(y_train), np.ravel(y_val)
 
     return X_train, X_val, y_train, y_val
+
+def get_balance(dataset):
+    pk = dataset.value_counts('label').values
+    _entropy = entropy(pk/np.sum(pk), base=2)
+    max_entropy = np.log2(pk.shape[0])
+    balance = _entropy/max_entropy
+
+    return balance

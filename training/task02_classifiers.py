@@ -71,10 +71,10 @@ def train_validate_classifiers(epochs: int, batch_size: int, K: int):
     # Merge the features as raw concatenation
     concat = ports.reset_index().drop(columns=['label'])\
                   .merge(statistics.reset_index().drop(columns=['label']), 
-                         on='src_ip', how='inner')\
+                         on='index', how='inner')\
                   .merge(ipaddress.reset_index(), 
-                         on='src_ip', how='inner')\
-                  .set_index('src_ip')
+                         on='index', how='inner')\
+                  .set_index('index')
     
     # Load the pre-trained multimodal embeddings
     embeddings=pd.read_csv(f'{EMBEDDINGS}/mae_embeddings_k{K}.csv', 

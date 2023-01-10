@@ -70,10 +70,10 @@ def train_multimodal_autoencoder(epochs: int, batch_size: int, K: int):
     # Merge the features as raw concatenation
     concat = ports.reset_index().drop(columns=['label'])\
                   .merge(statistics.reset_index().drop(columns=['label']), 
-                         on='src_ip', how='inner')\
+                         on='index', how='inner')\
                   .merge(ipaddress.reset_index(), 
-                         on='src_ip', how='inner')\
-                  .set_index('src_ip')
+                         on='index', how='inner')\
+                  .set_index('index')
 
     # Load stratified k folds
     kfolds = joblib.load(f'../data/task02/skfolds/folds.save')

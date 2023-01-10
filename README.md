@@ -195,37 +195,12 @@ If you use this code or data in your research, please cite our paper:
 
 ## **Todo**
 - Notebooks:
-    - [x] Task01
-        - [x] Codes
-        - [x] Comments
-        - [x] Markdowns
-    - [x] Task02
-        - [x] Codes
-        - [x] Comments
-        - [x] Intro-Markdowns
-    - [x] Task03
-        - [x] Codes
-        - [x] Comments
-        - [x] Intro-Markdowns
-    - [x] GridSearch
-        - [x] Codes
-        - [x] Comments
-        - [x] Intro-Markdowns
     - [ ] Finalization and visualization
-    - [ ] Starting datasets and characterization
-        - [x] Datasets
-        - [ ] Dataset balancing
-        - [ ] Markdowns
-        - [ ] Comments and functions
-        - [ ] Stratified k fold
         - [ ] t-SNE - task01
-- Scripts
-    - [x] Training task01
-    - [x] Training task02
-    - [x] Training task03
-    - [x] Training GridSearch
 - Documentation
     - [x] README
-    - [x] Raw data folder on cluster
+    - [ ] Notebooks
+        - [ ] Starting datasets and characterization
+        - [ ] Finalization and visualization
     - [ ] References to the datasets and papers
     - [ ] More detailed instruction on how to download and setup experiments (once agreed)
