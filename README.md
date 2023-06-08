@@ -1,7 +1,7 @@
-# Multi-modal Autoencoders for Network Traffic Analysis
+# Learning Multi-modal Representations from Network Traffic
 ___
 
-In this repository, we provide the source code and data used in the experiments of our paper "Multi-modal Autoencoders for Network Traffic Analysis", presented at the [Conference Name] conference in [Year]. The paper presents a multi-modal autoencoder (MAE) architecture for network traffic analysis, and evaluates it on three different traffic analysis tasks. 
+In this repository, we provide the source code and data used in the experiments of our paper "Learning Multi-modal Representations from Network Traffic", presented at the [Conference Name] conference in [Year]. The paper presents a multi-modal autoencoder (MAE) architecture for network traffic classification, and evaluates it on different traffic analysis tasks. 
 
 The MAE architecture consists of multiple adaptation modules for handling different input measurements, and an integration module for creating intermediate embeddings. We demonstrate the benefits of this approach by implementing it on three different traffic analysis tasks and comparing it to alternative deep learning solutions. Our results show that the MAE performs on par or better 
 than these alternatives, and that the representation it generates is rich and compact.
